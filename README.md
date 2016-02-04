@@ -4,9 +4,11 @@ Tool for updating Atlas (vagrant-cloud) box repository JSON files.
 
 Atlas-Meta allows programmatically adding new vagrant box versions to an Atlas (formerly vagrant-cloud) "Box Catalog Metadata" file. This metadata file can then be specified as a `box_url` in a Vagrantfile, which allows vagrant to automatically download the latest version of a box.
 
+Vagrant Box Metadata Format: https://www.vagrantup.com/docs/boxes/format.html
+
 Atlas-Meta is built into a docker image to make it easy to use in continuous integration without installation: https://hub.docker.com/r/karlkfi/atlas-meta/
 
-Vagrant Box Metadata Format: https://www.vagrantup.com/docs/boxes/format.html
+[![](https://badge.imagelayers.io/karlkfi/atlas-meta:latest.svg)](https://imagelayers.io/?images=karlkfi/atlas-meta:latest 'Get your own badge on imagelayers.io')
 
 
 ## Example
