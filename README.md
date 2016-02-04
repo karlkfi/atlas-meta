@@ -6,6 +6,8 @@ Atlas-Meta allows programmatically adding new vagrant box versions to an Atlas (
 
 Atlas-Meta is built into a docker image to make it easy to use in continuous integration without installation: https://hub.docker.com/r/karlkfi/atlas-meta/
 
+Vagrant Box Metadata Format: https://www.vagrantup.com/docs/boxes/format.html
+
 
 ## Example
 
