@@ -2,20 +2,9 @@
 
 Tool for updating Atlas (vagrant-cloud) box repository JSON files.
 
+Atlas-Meta allows programmatically adding new vagrant box versions to an Atlas (formerly vagrant-cloud) "Box Catalog Metadata" file. This metadata file can then be specified as a `box_url` in a Vagrantfile, which allows vagrant to automatically download the latest version of a box.
 
-## Install
-
-```
-go get github.com/golang/glog
-go install github.com/karlkfi/atlas-meta
-```
-
-
-## Build Docker Image
-
-```
-./build.sh
-```
+Atlas-Meta is built into a docker image to make it easy to use in continuous integration without installation: https://hub.docker.com/r/karlkfi/atlas-meta/
 
 
 ## Example
@@ -46,6 +35,13 @@ docker run --rm -it \
   --checksum-type sha1 \
   --checksum fake-checksum \
   add
+```
+
+
+## Build Docker Image
+
+```
+./build.sh
 ```
 
 
